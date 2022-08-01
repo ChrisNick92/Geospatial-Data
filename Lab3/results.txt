@@ -1,0 +1,1513 @@
+-----> Part 1 - Testing some classic classifiers <-----
+
+- Training on both images at the same time ...
+
+- Training random forest ...
+- training completed in 19.0469 sec(s)
+- Results on the test set ...:
+
+                                 precision    recall  f1-score   support
+
+             Dense Urban Fabric       0.91      0.72      0.80       513
+       Mineral Extraction Sites       0.96      0.88      0.92       103
+      Non Irrigated Arable Land       0.90      0.84      0.87       386
+                    Fruit Trees       0.90      0.64      0.75        73
+                   Olive Groves       0.92      0.84      0.88      1026
+            Broad-leaved Forest       0.93      0.60      0.73        72
+              Coniferous Forest       0.95      0.81      0.88       291
+                   Mixed Forest       0.73      0.70      0.71       355
+Dense Sclerophyllous Vegetation       0.87      0.90      0.88      2861
+Sparce Scerophyllous Vegetation       0.87      0.93      0.90      3104
+       Sparcely Vegetated Areas       0.90      0.89      0.89       728
+                 Rocks and Sand       0.96      0.95      0.96       311
+                          Water       0.99      1.00      1.00       950
+                  Coastal Water       1.00      0.98      0.99       291
+
+                       accuracy                           0.89     11064
+                      macro avg       0.91      0.84      0.87     11064
+                   weighted avg       0.89      0.89      0.89     11064
+
+- Training MLP ...
+Epoch: 20/200     Training Loss: 0.8410     Validation Loss: 0.6789
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+Epoch: 40/200     Training Loss: 0.6556     Validation Loss: 0.5337
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+Epoch: 60/200     Training Loss: 0.5920     Validation Loss: 0.4632
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 9 out of 30
+Epoch: 80/200     Training Loss: 0.5730     Validation Loss: 0.4881
+EarlyStopping counter: 10 out of 30
+EarlyStopping counter: 11 out of 30
+EarlyStopping counter: 12 out of 30
+EarlyStopping counter: 13 out of 30
+EarlyStopping counter: 14 out of 30
+EarlyStopping counter: 15 out of 30
+EarlyStopping counter: 16 out of 30
+EarlyStopping counter: 17 out of 30
+EarlyStopping counter: 18 out of 30
+EarlyStopping counter: 19 out of 30
+EarlyStopping counter: 20 out of 30
+EarlyStopping counter: 21 out of 30
+EarlyStopping counter: 22 out of 30
+EarlyStopping counter: 23 out of 30
+EarlyStopping counter: 24 out of 30
+EarlyStopping counter: 25 out of 30
+EarlyStopping counter: 26 out of 30
+EarlyStopping counter: 27 out of 30
+EarlyStopping counter: 28 out of 30
+EarlyStopping counter: 29 out of 30
+Epoch: 100/200     Training Loss: 0.5840     Validation Loss: 0.4913
+EarlyStopping counter: 30 out of 30
+Early stopping
+
+- training completed in 4.0 min(s) and 12.4432 sec(s)
+- Results on the test set ...:
+
+                                 precision    recall  f1-score   support
+
+             Dense Urban Fabric       0.89      0.85      0.87       318
+       Mineral Extraction Sites       1.00      0.67      0.80        54
+      Non Irrigated Arable Land       0.95      0.87      0.91       218
+                    Fruit Trees       0.00      0.00      0.00        38
+                   Olive Groves       0.90      0.96      0.92       635
+            Broad-leaved Forest       0.00      0.00      0.00        37
+              Coniferous Forest       0.99      0.61      0.76       145
+                   Mixed Forest       0.61      0.48      0.53       233
+Dense Sclerophyllous Vegetation       0.87      0.92      0.89      1827
+Sparce Scerophyllous Vegetation       0.91      0.96      0.93      1852
+       Sparcely Vegetated Areas       0.95      0.91      0.93       385
+                 Rocks and Sand       0.93      0.93      0.93       180
+                          Water       1.00      1.00      1.00       591
+                  Coastal Water       1.00      0.99      0.99       193
+
+                       accuracy                           0.90      6706
+                      macro avg       0.79      0.72      0.75      6706
+                   weighted avg       0.89      0.90      0.90      6706
+
+- Training on Dioni validating on Loukia ...
+
+- Training random forest ...
+- training completed in 15.1250 sec(s)
+- Results on the test set ...:
+
+                                 precision    recall  f1-score   support
+
+             Dense Urban Fabric       0.14      0.05      0.08       288
+       Mineral Extraction Sites       0.37      0.88      0.52        67
+      Non Irrigated Arable Land       0.91      0.16      0.27       542
+                    Fruit Trees       0.50      0.05      0.09        79
+                   Olive Groves       0.00      0.00      0.00      1401
+            Broad-leaved Forest       0.00      0.00      0.00       223
+              Coniferous Forest       0.53      0.32      0.40       500
+                   Mixed Forest       0.00      0.00      0.00      1072
+Dense Sclerophyllous Vegetation       0.52      0.92      0.66      3793
+Sparce Scerophyllous Vegetation       0.58      0.79      0.67      2803
+       Sparcely Vegetated Areas       0.18      0.22      0.19       404
+                 Rocks and Sand       0.00      0.00      0.00       487
+                          Water       0.99      1.00      0.99      1393
+                  Coastal Water       1.00      1.00      1.00       451
+
+                       accuracy                           0.59     13503
+                      macro avg       0.41      0.38      0.35     13503
+                   weighted avg       0.47      0.59      0.50     13503
+
+- Training MLP ...
+Epoch: 20/200     Training Loss: 0.7323     Validation Loss: 0.5686
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+Epoch: 40/200     Training Loss: 0.4986     Validation Loss: 0.3568
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+Epoch: 60/200     Training Loss: 0.4105     Validation Loss: 0.2911
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+Epoch: 80/200     Training Loss: 0.3812     Validation Loss: 0.2946
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 9 out of 30
+EarlyStopping counter: 10 out of 30
+EarlyStopping counter: 11 out of 30
+EarlyStopping counter: 12 out of 30
+EarlyStopping counter: 13 out of 30
+EarlyStopping counter: 14 out of 30
+EarlyStopping counter: 15 out of 30
+EarlyStopping counter: 16 out of 30
+EarlyStopping counter: 17 out of 30
+EarlyStopping counter: 18 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+Epoch: 100/200     Training Loss: 0.3767     Validation Loss: 0.2884
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 9 out of 30
+EarlyStopping counter: 10 out of 30
+EarlyStopping counter: 11 out of 30
+EarlyStopping counter: 12 out of 30
+EarlyStopping counter: 13 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 9 out of 30
+Epoch: 120/200     Training Loss: 0.3705     Validation Loss: 0.2856
+EarlyStopping counter: 10 out of 30
+EarlyStopping counter: 11 out of 30
+EarlyStopping counter: 12 out of 30
+EarlyStopping counter: 13 out of 30
+EarlyStopping counter: 14 out of 30
+EarlyStopping counter: 15 out of 30
+EarlyStopping counter: 16 out of 30
+EarlyStopping counter: 17 out of 30
+EarlyStopping counter: 18 out of 30
+EarlyStopping counter: 19 out of 30
+EarlyStopping counter: 20 out of 30
+EarlyStopping counter: 21 out of 30
+EarlyStopping counter: 22 out of 30
+EarlyStopping counter: 23 out of 30
+EarlyStopping counter: 24 out of 30
+EarlyStopping counter: 25 out of 30
+EarlyStopping counter: 26 out of 30
+EarlyStopping counter: 27 out of 30
+EarlyStopping counter: 28 out of 30
+EarlyStopping counter: 29 out of 30
+Epoch: 140/200     Training Loss: 0.3837     Validation Loss: 0.2956
+EarlyStopping counter: 30 out of 30
+Early stopping
+
+- training completed in 4.0 min(s) and 0.1774 sec(s)
+- Results on the test set ...:
+
+                                 precision    recall  f1-score   support
+
+             Dense Urban Fabric       0.40      0.51      0.45       288
+       Mineral Extraction Sites       0.38      0.75      0.50        67
+      Non Irrigated Arable Land       0.84      0.38      0.52       542
+                    Fruit Trees       0.00      0.00      0.00        79
+                   Olive Groves       0.80      0.21      0.33      1401
+            Broad-leaved Forest       0.00      0.00      0.00       223
+              Coniferous Forest       0.00      0.00      0.00       500
+                   Mixed Forest       0.00      0.00      0.00      1072
+Dense Sclerophyllous Vegetation       0.50      0.88      0.64      3793
+Sparce Scerophyllous Vegetation       0.69      0.81      0.75      2803
+       Sparcely Vegetated Areas       0.18      0.24      0.20       404
+                 Rocks and Sand       0.00      0.00      0.00       487
+                          Water       1.00      1.00      1.00      1393
+                  Coastal Water       0.99      1.00      0.99       451
+
+                       accuracy                           0.61     13503
+                      macro avg       0.41      0.41      0.38     13503
+                   weighted avg       0.55      0.61      0.54     13503
+
+-----> Part 2 - CNN's <-----
+
+- Training CNN with patches - Maximum overlapping ...
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+Epoch: 20/200     Training Loss: 0.4486     Validation Loss: 0.4483
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+Epoch: 40/200     Training Loss: 0.2647     Validation Loss: 0.3301
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 1 out of 30
+Epoch: 60/200     Training Loss: 0.1280     Validation Loss: 0.1493
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+Epoch: 80/200     Training Loss: 0.0827     Validation Loss: 0.1819
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 9 out of 30
+Epoch: 100/200     Training Loss: 0.0646     Validation Loss: 0.0935
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 9 out of 30
+EarlyStopping counter: 10 out of 30
+EarlyStopping counter: 11 out of 30
+EarlyStopping counter: 12 out of 30
+EarlyStopping counter: 13 out of 30
+EarlyStopping counter: 14 out of 30
+EarlyStopping counter: 15 out of 30
+EarlyStopping counter: 16 out of 30
+Epoch: 120/200     Training Loss: 0.0344     Validation Loss: 0.1162
+EarlyStopping counter: 17 out of 30
+EarlyStopping counter: 18 out of 30
+EarlyStopping counter: 19 out of 30
+EarlyStopping counter: 20 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+Epoch: 140/200     Training Loss: 0.0405     Validation Loss: 0.0804
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 9 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 9 out of 30
+EarlyStopping counter: 10 out of 30
+Epoch: 160/200     Training Loss: 0.0278     Validation Loss: 0.1006
+EarlyStopping counter: 11 out of 30
+EarlyStopping counter: 12 out of 30
+EarlyStopping counter: 13 out of 30
+EarlyStopping counter: 14 out of 30
+EarlyStopping counter: 15 out of 30
+EarlyStopping counter: 16 out of 30
+EarlyStopping counter: 17 out of 30
+EarlyStopping counter: 18 out of 30
+EarlyStopping counter: 1 out of 30
+EarlyStopping counter: 2 out of 30
+EarlyStopping counter: 3 out of 30
+EarlyStopping counter: 4 out of 30
+EarlyStopping counter: 5 out of 30
+EarlyStopping counter: 6 out of 30
+EarlyStopping counter: 7 out of 30
+EarlyStopping counter: 8 out of 30
+EarlyStopping counter: 9 out of 30
+EarlyStopping counter: 10 out of 30
+EarlyStopping counter: 11 out of 30
+Epoch: 180/200     Training Loss: 0.0302     Validation Loss: 0.1232
+EarlyStopping counter: 12 out of 30
+EarlyStopping counter: 13 out of 30
+EarlyStopping counter: 14 out of 30
+EarlyStopping counter: 15 out of 30
+EarlyStopping counter: 16 out of 30
+EarlyStopping counter: 17 out of 30
+EarlyStopping counter: 18 out of 30
+EarlyStopping counter: 19 out of 30
+EarlyStopping counter: 20 out of 30
+EarlyStopping counter: 21 out of 30
+EarlyStopping counter: 22 out of 30
+EarlyStopping counter: 23 out of 30
+EarlyStopping counter: 24 out of 30
+EarlyStopping counter: 25 out of 30
+EarlyStopping counter: 26 out of 30
+EarlyStopping counter: 27 out of 30
+EarlyStopping counter: 28 out of 30
+EarlyStopping counter: 29 out of 30
+EarlyStopping counter: 30 out of 30
+Early stopping
+
+- training completed in 47.0 min(s) and 11.6566 sec(s)
+- Results on the test set ...:
+
+                                 precision    recall  f1-score   support
+
+             Dense Urban Fabric       0.96      0.98      0.97       441
+       Mineral Extraction Sites       1.00      1.00      1.00        68
+      Non Irrigated Arable Land       0.99      0.97      0.98       324
+                    Fruit Trees       0.91      0.87      0.89        47
+                   Olive Groves       0.99      0.96      0.97       959
+            Broad-leaved Forest       0.92      0.81      0.86        70
+              Coniferous Forest       0.97      0.94      0.95       245
+                   Mixed Forest       0.94      0.96      0.95       291
+Dense Sclerophyllous Vegetation       0.98      0.99      0.98      2521
+Sparce Scerophyllous Vegetation       0.98      0.99      0.98      2677
+       Sparcely Vegetated Areas       0.99      0.99      0.99       649
+                 Rocks and Sand       1.00      0.99      1.00       277
+                          Water       1.00      1.00      1.00       872
+                  Coastal Water       1.00      1.00      1.00       239
+
+                       accuracy                           0.98      9680
+                      macro avg       0.97      0.96      0.97      9680
+                   weighted avg       0.98      0.98      0.98      9680
+
+- Training CNN with patches - No overlapping...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+Epoch: 20/300     Training Loss: 1.3101     Validation Loss: 1.2472
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+Epoch: 40/300     Training Loss: 1.1659     Validation Loss: 1.1797
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+Epoch: 60/300     Training Loss: 1.0813     Validation Loss: 1.1659
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+Epoch: 80/300     Training Loss: 0.9832     Validation Loss: 1.1717
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+Epoch: 100/300     Training Loss: 0.8396     Validation Loss: 0.9933
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 1 out of 120
+Epoch: 120/300     Training Loss: 0.7233     Validation Loss: 0.9156
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+Epoch: 140/300     Training Loss: 0.7751     Validation Loss: 0.8961
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 1 out of 120
+Epoch: 160/300     Training Loss: 0.5939     Validation Loss: 0.8376
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+EarlyStopping counter: 15 out of 120
+EarlyStopping counter: 16 out of 120
+EarlyStopping counter: 17 out of 120
+Epoch: 180/300     Training Loss: 0.5397     Validation Loss: 0.8292
+EarlyStopping counter: 18 out of 120
+EarlyStopping counter: 19 out of 120
+EarlyStopping counter: 20 out of 120
+EarlyStopping counter: 21 out of 120
+EarlyStopping counter: 22 out of 120
+EarlyStopping counter: 23 out of 120
+EarlyStopping counter: 24 out of 120
+EarlyStopping counter: 25 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+Epoch: 200/300     Training Loss: 0.5083     Validation Loss: 0.8275
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+EarlyStopping counter: 15 out of 120
+EarlyStopping counter: 16 out of 120
+Epoch: 220/300     Training Loss: 0.4877     Validation Loss: 0.8570
+EarlyStopping counter: 17 out of 120
+EarlyStopping counter: 18 out of 120
+EarlyStopping counter: 19 out of 120
+EarlyStopping counter: 20 out of 120
+EarlyStopping counter: 21 out of 120
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+Epoch: 240/300     Training Loss: 0.4255     Validation Loss: 0.7669
+EarlyStopping counter: 15 out of 120
+EarlyStopping counter: 16 out of 120
+EarlyStopping counter: 17 out of 120
+EarlyStopping counter: 18 out of 120
+EarlyStopping counter: 19 out of 120
+EarlyStopping counter: 20 out of 120
+EarlyStopping counter: 21 out of 120
+EarlyStopping counter: 22 out of 120
+EarlyStopping counter: 23 out of 120
+EarlyStopping counter: 24 out of 120
+EarlyStopping counter: 25 out of 120
+EarlyStopping counter: 26 out of 120
+EarlyStopping counter: 27 out of 120
+EarlyStopping counter: 28 out of 120
+EarlyStopping counter: 29 out of 120
+EarlyStopping counter: 30 out of 120
+EarlyStopping counter: 31 out of 120
+EarlyStopping counter: 32 out of 120
+EarlyStopping counter: 33 out of 120
+EarlyStopping counter: 34 out of 120
+Epoch: 260/300     Training Loss: 0.3780     Validation Loss: 0.8319
+EarlyStopping counter: 35 out of 120
+EarlyStopping counter: 36 out of 120
+EarlyStopping counter: 37 out of 120
+EarlyStopping counter: 38 out of 120
+EarlyStopping counter: 39 out of 120
+EarlyStopping counter: 40 out of 120
+EarlyStopping counter: 41 out of 120
+EarlyStopping counter: 42 out of 120
+EarlyStopping counter: 43 out of 120
+EarlyStopping counter: 44 out of 120
+EarlyStopping counter: 45 out of 120
+EarlyStopping counter: 46 out of 120
+EarlyStopping counter: 47 out of 120
+EarlyStopping counter: 48 out of 120
+EarlyStopping counter: 49 out of 120
+EarlyStopping counter: 50 out of 120
+EarlyStopping counter: 51 out of 120
+EarlyStopping counter: 52 out of 120
+EarlyStopping counter: 53 out of 120
+EarlyStopping counter: 54 out of 120
+Epoch: 280/300     Training Loss: 0.4710     Validation Loss: 0.7998
+EarlyStopping counter: 55 out of 120
+EarlyStopping counter: 56 out of 120
+EarlyStopping counter: 57 out of 120
+EarlyStopping counter: 58 out of 120
+EarlyStopping counter: 59 out of 120
+EarlyStopping counter: 60 out of 120
+EarlyStopping counter: 61 out of 120
+EarlyStopping counter: 62 out of 120
+EarlyStopping counter: 63 out of 120
+EarlyStopping counter: 64 out of 120
+EarlyStopping counter: 65 out of 120
+EarlyStopping counter: 66 out of 120
+EarlyStopping counter: 67 out of 120
+EarlyStopping counter: 68 out of 120
+EarlyStopping counter: 69 out of 120
+EarlyStopping counter: 70 out of 120
+EarlyStopping counter: 71 out of 120
+EarlyStopping counter: 72 out of 120
+EarlyStopping counter: 73 out of 120
+EarlyStopping counter: 74 out of 120
+Epoch: 300/300     Training Loss: 0.3186     Validation Loss: 0.8780
+EarlyStopping counter: 75 out of 120
+
+- training completed in 1.0 min(s) and 39.4312 sec(s)
+- Results on the test set ...:
+
+                                 precision    recall  f1-score   support
+
+             Dense Urban Fabric       0.50      0.56      0.53        16
+       Mineral Extraction Sites       1.00      0.67      0.80         3
+      Non Irrigated Arable Land       0.75      0.52      0.62        23
+                    Fruit Trees       0.33      0.14      0.20         7
+                   Olive Groves       0.55      0.69      0.61        45
+            Broad-leaved Forest       0.60      0.33      0.43         9
+              Coniferous Forest       0.71      0.62      0.67        16
+                   Mixed Forest       1.00      0.31      0.47        13
+Dense Sclerophyllous Vegetation       0.75      0.81      0.78       114
+Sparce Scerophyllous Vegetation       0.80      0.85      0.82       115
+       Sparcely Vegetated Areas       0.64      0.66      0.65        32
+                 Rocks and Sand       0.86      0.71      0.77        17
+                          Water       0.97      0.97      0.97        29
+                  Coastal Water       0.92      0.92      0.92        13
+
+                       accuracy                           0.74       452
+                      macro avg       0.74      0.63      0.66       452
+                   weighted avg       0.75      0.74      0.73       452
+
+- Training ResNet on patches - No overlapping...
+Epoch: 20/300     Training Loss: 1.5733     Validation Loss: 1.4980
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 1 out of 50
+Epoch: 40/300     Training Loss: 1.2938     Validation Loss: 1.1587
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+Epoch: 60/300     Training Loss: 1.1064     Validation Loss: 1.0024
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+Epoch: 80/300     Training Loss: 1.0908     Validation Loss: 0.9418
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 8 out of 50
+EarlyStopping counter: 9 out of 50
+EarlyStopping counter: 10 out of 50
+Epoch: 100/300     Training Loss: 1.0131     Validation Loss: 0.8990
+EarlyStopping counter: 11 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 8 out of 50
+Epoch: 120/300     Training Loss: 0.9932     Validation Loss: 0.8731
+EarlyStopping counter: 9 out of 50
+EarlyStopping counter: 10 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 8 out of 50
+EarlyStopping counter: 9 out of 50
+EarlyStopping counter: 10 out of 50
+EarlyStopping counter: 11 out of 50
+EarlyStopping counter: 12 out of 50
+EarlyStopping counter: 13 out of 50
+EarlyStopping counter: 14 out of 50
+Epoch: 140/300     Training Loss: 0.9616     Validation Loss: 0.8691
+EarlyStopping counter: 15 out of 50
+EarlyStopping counter: 16 out of 50
+EarlyStopping counter: 17 out of 50
+EarlyStopping counter: 18 out of 50
+EarlyStopping counter: 19 out of 50
+EarlyStopping counter: 20 out of 50
+EarlyStopping counter: 21 out of 50
+EarlyStopping counter: 22 out of 50
+EarlyStopping counter: 23 out of 50
+EarlyStopping counter: 24 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 8 out of 50
+EarlyStopping counter: 9 out of 50
+Epoch: 160/300     Training Loss: 0.8970     Validation Loss: 0.8521
+EarlyStopping counter: 10 out of 50
+EarlyStopping counter: 11 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 8 out of 50
+EarlyStopping counter: 9 out of 50
+Epoch: 180/300     Training Loss: 0.9049     Validation Loss: 0.8532
+EarlyStopping counter: 10 out of 50
+EarlyStopping counter: 11 out of 50
+EarlyStopping counter: 12 out of 50
+EarlyStopping counter: 13 out of 50
+EarlyStopping counter: 14 out of 50
+EarlyStopping counter: 15 out of 50
+EarlyStopping counter: 16 out of 50
+EarlyStopping counter: 17 out of 50
+EarlyStopping counter: 18 out of 50
+EarlyStopping counter: 19 out of 50
+EarlyStopping counter: 20 out of 50
+EarlyStopping counter: 21 out of 50
+EarlyStopping counter: 22 out of 50
+EarlyStopping counter: 23 out of 50
+EarlyStopping counter: 24 out of 50
+EarlyStopping counter: 25 out of 50
+EarlyStopping counter: 26 out of 50
+EarlyStopping counter: 27 out of 50
+EarlyStopping counter: 28 out of 50
+EarlyStopping counter: 29 out of 50
+Epoch: 200/300     Training Loss: 0.8346     Validation Loss: 0.8666
+EarlyStopping counter: 30 out of 50
+EarlyStopping counter: 31 out of 50
+EarlyStopping counter: 32 out of 50
+EarlyStopping counter: 33 out of 50
+EarlyStopping counter: 34 out of 50
+EarlyStopping counter: 35 out of 50
+EarlyStopping counter: 36 out of 50
+EarlyStopping counter: 37 out of 50
+EarlyStopping counter: 38 out of 50
+EarlyStopping counter: 39 out of 50
+EarlyStopping counter: 40 out of 50
+EarlyStopping counter: 41 out of 50
+EarlyStopping counter: 42 out of 50
+EarlyStopping counter: 43 out of 50
+EarlyStopping counter: 44 out of 50
+EarlyStopping counter: 45 out of 50
+EarlyStopping counter: 46 out of 50
+EarlyStopping counter: 47 out of 50
+EarlyStopping counter: 48 out of 50
+EarlyStopping counter: 49 out of 50
+Epoch: 220/300     Training Loss: 0.8406     Validation Loss: 0.8030
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 8 out of 50
+EarlyStopping counter: 9 out of 50
+EarlyStopping counter: 10 out of 50
+EarlyStopping counter: 11 out of 50
+EarlyStopping counter: 12 out of 50
+EarlyStopping counter: 13 out of 50
+EarlyStopping counter: 14 out of 50
+EarlyStopping counter: 15 out of 50
+EarlyStopping counter: 16 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+Epoch: 240/300     Training Loss: 0.8392     Validation Loss: 0.8158
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+Epoch: 260/300     Training Loss: 0.7779     Validation Loss: 0.8223
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 8 out of 50
+EarlyStopping counter: 9 out of 50
+EarlyStopping counter: 10 out of 50
+EarlyStopping counter: 11 out of 50
+EarlyStopping counter: 12 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 8 out of 50
+EarlyStopping counter: 9 out of 50
+EarlyStopping counter: 10 out of 50
+EarlyStopping counter: 11 out of 50
+Epoch: 280/300     Training Loss: 0.7612     Validation Loss: 0.7974
+EarlyStopping counter: 12 out of 50
+EarlyStopping counter: 13 out of 50
+EarlyStopping counter: 14 out of 50
+EarlyStopping counter: 15 out of 50
+EarlyStopping counter: 16 out of 50
+EarlyStopping counter: 1 out of 50
+EarlyStopping counter: 2 out of 50
+EarlyStopping counter: 3 out of 50
+EarlyStopping counter: 4 out of 50
+EarlyStopping counter: 5 out of 50
+EarlyStopping counter: 6 out of 50
+EarlyStopping counter: 7 out of 50
+EarlyStopping counter: 8 out of 50
+EarlyStopping counter: 9 out of 50
+EarlyStopping counter: 10 out of 50
+EarlyStopping counter: 11 out of 50
+EarlyStopping counter: 12 out of 50
+EarlyStopping counter: 13 out of 50
+EarlyStopping counter: 14 out of 50
+Epoch: 300/300     Training Loss: 0.7950     Validation Loss: 0.7962
+EarlyStopping counter: 15 out of 50
+
+- training completed in 9.0 min(s) and 28.3658 sec(s)
+- Results on the test set ...:
+
+                                 precision    recall  f1-score   support
+
+             Dense Urban Fabric       0.59      0.50      0.54        20
+       Mineral Extraction Sites       1.00      1.00      1.00         6
+      Non Irrigated Arable Land       0.58      0.50      0.54        22
+                    Fruit Trees       0.00      0.00      0.00         8
+                   Olive Groves       0.65      0.63      0.64        62
+            Broad-leaved Forest       0.00      0.00      0.00         6
+              Coniferous Forest       0.59      0.48      0.53        21
+                   Mixed Forest       0.67      0.47      0.55        17
+Dense Sclerophyllous Vegetation       0.59      0.80      0.68       107
+Sparce Scerophyllous Vegetation       0.71      0.70      0.71       100
+       Sparcely Vegetated Areas       0.68      0.57      0.62        23
+                 Rocks and Sand       1.00      0.82      0.90        17
+                          Water       1.00      1.00      1.00        27
+                  Coastal Water       1.00      1.00      1.00        16
+
+                       accuracy                           0.69       452
+                      macro avg       0.65      0.60      0.62       452
+                   weighted avg       0.68      0.69      0.67       452
+
+-----> Part 3 - UNet <-----
+
+- Training UNet on cropped dataset - 32x32 images...
+Validation loss decreased (inf --> 2.655854).  Saving model ...
+Validation loss decreased (2.655854 --> 2.552530).  Saving model ...
+Validation loss decreased (2.552530 --> 2.361251).  Saving model ...
+Validation loss decreased (2.361251 --> 2.166573).  Saving model ...
+Validation loss decreased (2.166573 --> 2.053106).  Saving model ...
+Validation loss decreased (2.053106 --> 1.974353).  Saving model ...
+Validation loss decreased (1.974353 --> 1.898577).  Saving model ...
+Validation loss decreased (1.898577 --> 1.815476).  Saving model ...
+Validation loss decreased (1.815476 --> 1.763380).  Saving model ...
+Validation loss decreased (1.763380 --> 1.721031).  Saving model ...
+Validation loss decreased (1.721031 --> 1.658965).  Saving model ...
+Validation loss decreased (1.658965 --> 1.608781).  Saving model ...
+Validation loss decreased (1.608781 --> 1.604678).  Saving model ...
+Validation loss decreased (1.604678 --> 1.593074).  Saving model ...
+Validation loss decreased (1.593074 --> 1.577880).  Saving model ...
+Validation loss decreased (1.577880 --> 1.542270).  Saving model ...
+EarlyStopping counter: 1 out of 120
+Validation loss decreased (1.542270 --> 1.446271).  Saving model ...
+EarlyStopping counter: 1 out of 120
+Epoch: 20/500     Training Loss: 1.1857     Validation Loss: 1.4037
+Validation loss decreased (1.446271 --> 1.403738).  Saving model ...
+EarlyStopping counter: 1 out of 120
+Validation loss decreased (1.403738 --> 1.363162).  Saving model ...
+Validation loss decreased (1.363162 --> 1.316856).  Saving model ...
+EarlyStopping counter: 1 out of 120
+Validation loss decreased (1.316856 --> 1.287537).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+Validation loss decreased (1.287537 --> 1.275581).  Saving model ...
+Validation loss decreased (1.275581 --> 1.181837).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+Validation loss decreased (1.181837 --> 1.166056).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+Validation loss decreased (1.166056 --> 1.152642).  Saving model ...
+EarlyStopping counter: 1 out of 120
+Epoch: 40/500     Training Loss: 0.8986     Validation Loss: 1.0641
+Validation loss decreased (1.152642 --> 1.064055).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+Validation loss decreased (1.064055 --> 0.993328).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+Epoch: 60/500     Training Loss: 0.8141     Validation Loss: 1.4044
+EarlyStopping counter: 10 out of 120
+Validation loss decreased (0.993328 --> 0.957750).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+Validation loss decreased (0.957750 --> 0.957060).  Saving model ...
+Validation loss decreased (0.957060 --> 0.931337).  Saving model ...
+Validation loss decreased (0.931337 --> 0.923419).  Saving model ...
+Validation loss decreased (0.923419 --> 0.915871).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+Epoch: 80/500     Training Loss: 0.6919     Validation Loss: 0.9763
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+EarlyStopping counter: 15 out of 120
+EarlyStopping counter: 16 out of 120
+Validation loss decreased (0.915871 --> 0.875641).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+Validation loss decreased (0.875641 --> 0.830541).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+Epoch: 100/500     Training Loss: 0.6100     Validation Loss: 0.8925
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+EarlyStopping counter: 15 out of 120
+EarlyStopping counter: 16 out of 120
+EarlyStopping counter: 17 out of 120
+EarlyStopping counter: 18 out of 120
+EarlyStopping counter: 19 out of 120
+EarlyStopping counter: 20 out of 120
+EarlyStopping counter: 21 out of 120
+EarlyStopping counter: 22 out of 120
+EarlyStopping counter: 23 out of 120
+EarlyStopping counter: 24 out of 120
+Epoch: 120/500     Training Loss: 0.5680     Validation Loss: 0.8851
+EarlyStopping counter: 25 out of 120
+EarlyStopping counter: 26 out of 120
+Validation loss decreased (0.830541 --> 0.790658).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+Validation loss decreased (0.790658 --> 0.788276).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+Epoch: 140/500     Training Loss: 0.5744     Validation Loss: 0.8139
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+EarlyStopping counter: 15 out of 120
+EarlyStopping counter: 16 out of 120
+EarlyStopping counter: 17 out of 120
+EarlyStopping counter: 18 out of 120
+EarlyStopping counter: 19 out of 120
+EarlyStopping counter: 20 out of 120
+EarlyStopping counter: 21 out of 120
+EarlyStopping counter: 22 out of 120
+EarlyStopping counter: 23 out of 120
+EarlyStopping counter: 24 out of 120
+EarlyStopping counter: 25 out of 120
+EarlyStopping counter: 26 out of 120
+EarlyStopping counter: 27 out of 120
+EarlyStopping counter: 28 out of 120
+EarlyStopping counter: 29 out of 120
+EarlyStopping counter: 30 out of 120
+EarlyStopping counter: 31 out of 120
+Epoch: 160/500     Training Loss: 0.5043     Validation Loss: 0.8102
+EarlyStopping counter: 32 out of 120
+EarlyStopping counter: 33 out of 120
+EarlyStopping counter: 34 out of 120
+EarlyStopping counter: 35 out of 120
+EarlyStopping counter: 36 out of 120
+EarlyStopping counter: 37 out of 120
+EarlyStopping counter: 38 out of 120
+EarlyStopping counter: 39 out of 120
+EarlyStopping counter: 40 out of 120
+EarlyStopping counter: 41 out of 120
+EarlyStopping counter: 42 out of 120
+EarlyStopping counter: 43 out of 120
+EarlyStopping counter: 44 out of 120
+EarlyStopping counter: 45 out of 120
+Validation loss decreased (0.788276 --> 0.745416).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+Epoch: 180/500     Training Loss: 0.4459     Validation Loss: 1.0671
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+EarlyStopping counter: 15 out of 120
+EarlyStopping counter: 16 out of 120
+EarlyStopping counter: 17 out of 120
+EarlyStopping counter: 18 out of 120
+EarlyStopping counter: 19 out of 120
+EarlyStopping counter: 20 out of 120
+EarlyStopping counter: 21 out of 120
+EarlyStopping counter: 22 out of 120
+EarlyStopping counter: 23 out of 120
+EarlyStopping counter: 24 out of 120
+EarlyStopping counter: 25 out of 120
+Epoch: 200/500     Training Loss: 0.4061     Validation Loss: 0.9506
+EarlyStopping counter: 26 out of 120
+Validation loss decreased (0.745416 --> 0.737829).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+Validation loss decreased (0.737829 --> 0.729050).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+EarlyStopping counter: 15 out of 120
+Epoch: 220/500     Training Loss: 0.4702     Validation Loss: 0.9128
+EarlyStopping counter: 16 out of 120
+EarlyStopping counter: 17 out of 120
+EarlyStopping counter: 18 out of 120
+EarlyStopping counter: 19 out of 120
+EarlyStopping counter: 20 out of 120
+EarlyStopping counter: 21 out of 120
+EarlyStopping counter: 22 out of 120
+EarlyStopping counter: 23 out of 120
+EarlyStopping counter: 24 out of 120
+EarlyStopping counter: 25 out of 120
+EarlyStopping counter: 26 out of 120
+EarlyStopping counter: 27 out of 120
+EarlyStopping counter: 28 out of 120
+EarlyStopping counter: 29 out of 120
+EarlyStopping counter: 30 out of 120
+EarlyStopping counter: 31 out of 120
+EarlyStopping counter: 32 out of 120
+EarlyStopping counter: 33 out of 120
+EarlyStopping counter: 34 out of 120
+EarlyStopping counter: 35 out of 120
+Epoch: 240/500     Training Loss: 0.4274     Validation Loss: 0.8178
+EarlyStopping counter: 36 out of 120
+EarlyStopping counter: 37 out of 120
+EarlyStopping counter: 38 out of 120
+Validation loss decreased (0.729050 --> 0.716964).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+EarlyStopping counter: 15 out of 120
+EarlyStopping counter: 16 out of 120
+Epoch: 260/500     Training Loss: 0.3863     Validation Loss: 0.7751
+EarlyStopping counter: 17 out of 120
+EarlyStopping counter: 18 out of 120
+EarlyStopping counter: 19 out of 120
+EarlyStopping counter: 20 out of 120
+EarlyStopping counter: 21 out of 120
+EarlyStopping counter: 22 out of 120
+EarlyStopping counter: 23 out of 120
+EarlyStopping counter: 24 out of 120
+EarlyStopping counter: 25 out of 120
+EarlyStopping counter: 26 out of 120
+EarlyStopping counter: 27 out of 120
+EarlyStopping counter: 28 out of 120
+EarlyStopping counter: 29 out of 120
+EarlyStopping counter: 30 out of 120
+EarlyStopping counter: 31 out of 120
+EarlyStopping counter: 32 out of 120
+EarlyStopping counter: 33 out of 120
+EarlyStopping counter: 34 out of 120
+EarlyStopping counter: 35 out of 120
+EarlyStopping counter: 36 out of 120
+Epoch: 280/500     Training Loss: 0.4054     Validation Loss: 1.1743
+EarlyStopping counter: 37 out of 120
+EarlyStopping counter: 38 out of 120
+EarlyStopping counter: 39 out of 120
+EarlyStopping counter: 40 out of 120
+EarlyStopping counter: 41 out of 120
+EarlyStopping counter: 42 out of 120
+EarlyStopping counter: 43 out of 120
+EarlyStopping counter: 44 out of 120
+EarlyStopping counter: 45 out of 120
+EarlyStopping counter: 46 out of 120
+EarlyStopping counter: 47 out of 120
+EarlyStopping counter: 48 out of 120
+EarlyStopping counter: 49 out of 120
+EarlyStopping counter: 50 out of 120
+EarlyStopping counter: 51 out of 120
+EarlyStopping counter: 52 out of 120
+EarlyStopping counter: 53 out of 120
+EarlyStopping counter: 54 out of 120
+EarlyStopping counter: 55 out of 120
+EarlyStopping counter: 56 out of 120
+Epoch: 300/500     Training Loss: 0.3671     Validation Loss: 0.8539
+EarlyStopping counter: 57 out of 120
+EarlyStopping counter: 58 out of 120
+EarlyStopping counter: 59 out of 120
+EarlyStopping counter: 60 out of 120
+EarlyStopping counter: 61 out of 120
+EarlyStopping counter: 62 out of 120
+EarlyStopping counter: 63 out of 120
+EarlyStopping counter: 64 out of 120
+EarlyStopping counter: 65 out of 120
+EarlyStopping counter: 66 out of 120
+EarlyStopping counter: 67 out of 120
+EarlyStopping counter: 68 out of 120
+EarlyStopping counter: 69 out of 120
+EarlyStopping counter: 70 out of 120
+EarlyStopping counter: 71 out of 120
+EarlyStopping counter: 72 out of 120
+EarlyStopping counter: 73 out of 120
+EarlyStopping counter: 74 out of 120
+EarlyStopping counter: 75 out of 120
+EarlyStopping counter: 76 out of 120
+Epoch: 320/500     Training Loss: 0.4999     Validation Loss: 1.1609
+EarlyStopping counter: 77 out of 120
+EarlyStopping counter: 78 out of 120
+EarlyStopping counter: 79 out of 120
+EarlyStopping counter: 80 out of 120
+EarlyStopping counter: 81 out of 120
+EarlyStopping counter: 82 out of 120
+EarlyStopping counter: 83 out of 120
+Validation loss decreased (0.716964 --> 0.708462).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+Epoch: 340/500     Training Loss: 0.3165     Validation Loss: 0.7466
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+EarlyStopping counter: 15 out of 120
+Validation loss decreased (0.708462 --> 0.703747).  Saving model ...
+EarlyStopping counter: 1 out of 120
+EarlyStopping counter: 2 out of 120
+EarlyStopping counter: 3 out of 120
+EarlyStopping counter: 4 out of 120
+EarlyStopping counter: 5 out of 120
+EarlyStopping counter: 6 out of 120
+EarlyStopping counter: 7 out of 120
+EarlyStopping counter: 8 out of 120
+EarlyStopping counter: 9 out of 120
+EarlyStopping counter: 10 out of 120
+EarlyStopping counter: 11 out of 120
+EarlyStopping counter: 12 out of 120
+EarlyStopping counter: 13 out of 120
+EarlyStopping counter: 14 out of 120
+EarlyStopping counter: 15 out of 120
+EarlyStopping counter: 16 out of 120
+Epoch: 360/500     Training Loss: 0.3931     Validation Loss: 0.7892
+EarlyStopping counter: 17 out of 120
+EarlyStopping counter: 18 out of 120
+EarlyStopping counter: 19 out of 120
+EarlyStopping counter: 20 out of 120
+EarlyStopping counter: 21 out of 120
+EarlyStopping counter: 22 out of 120
+EarlyStopping counter: 23 out of 120
+EarlyStopping counter: 24 out of 120
+EarlyStopping counter: 25 out of 120
+EarlyStopping counter: 26 out of 120
+EarlyStopping counter: 27 out of 120
+EarlyStopping counter: 28 out of 120
+EarlyStopping counter: 29 out of 120
+EarlyStopping counter: 30 out of 120
+EarlyStopping counter: 31 out of 120
+EarlyStopping counter: 32 out of 120
+EarlyStopping counter: 33 out of 120
+EarlyStopping counter: 34 out of 120
+EarlyStopping counter: 35 out of 120
+EarlyStopping counter: 36 out of 120
+Epoch: 380/500     Training Loss: 0.3683     Validation Loss: 1.4699
+EarlyStopping counter: 37 out of 120
+EarlyStopping counter: 38 out of 120
+EarlyStopping counter: 39 out of 120
+EarlyStopping counter: 40 out of 120
+EarlyStopping counter: 41 out of 120
+EarlyStopping counter: 42 out of 120
+EarlyStopping counter: 43 out of 120
+EarlyStopping counter: 44 out of 120
+EarlyStopping counter: 45 out of 120
+EarlyStopping counter: 46 out of 120
+EarlyStopping counter: 47 out of 120
+EarlyStopping counter: 48 out of 120
+EarlyStopping counter: 49 out of 120
+EarlyStopping counter: 50 out of 120
+EarlyStopping counter: 51 out of 120
+EarlyStopping counter: 52 out of 120
+EarlyStopping counter: 53 out of 120
+EarlyStopping counter: 54 out of 120
+EarlyStopping counter: 55 out of 120
+EarlyStopping counter: 56 out of 120
+Epoch: 400/500     Training Loss: 0.3198     Validation Loss: 1.1945
+EarlyStopping counter: 57 out of 120
+EarlyStopping counter: 58 out of 120
+EarlyStopping counter: 59 out of 120
+EarlyStopping counter: 60 out of 120
+EarlyStopping counter: 61 out of 120
+EarlyStopping counter: 62 out of 120
+EarlyStopping counter: 63 out of 120
+EarlyStopping counter: 64 out of 120
+EarlyStopping counter: 65 out of 120
+EarlyStopping counter: 66 out of 120
+EarlyStopping counter: 67 out of 120
+EarlyStopping counter: 68 out of 120
+EarlyStopping counter: 69 out of 120
+EarlyStopping counter: 70 out of 120
+EarlyStopping counter: 71 out of 120
+EarlyStopping counter: 72 out of 120
+EarlyStopping counter: 73 out of 120
+EarlyStopping counter: 74 out of 120
+EarlyStopping counter: 75 out of 120
+EarlyStopping counter: 76 out of 120
+Epoch: 420/500     Training Loss: 0.4218     Validation Loss: 1.4013
+EarlyStopping counter: 77 out of 120
+EarlyStopping counter: 78 out of 120
+EarlyStopping counter: 79 out of 120
+EarlyStopping counter: 80 out of 120
+EarlyStopping counter: 81 out of 120
+EarlyStopping counter: 82 out of 120
+EarlyStopping counter: 83 out of 120
+EarlyStopping counter: 84 out of 120
+EarlyStopping counter: 85 out of 120
+EarlyStopping counter: 86 out of 120
+EarlyStopping counter: 87 out of 120
+EarlyStopping counter: 88 out of 120
+EarlyStopping counter: 89 out of 120
+EarlyStopping counter: 90 out of 120
+EarlyStopping counter: 91 out of 120
+EarlyStopping counter: 92 out of 120
+EarlyStopping counter: 93 out of 120
+EarlyStopping counter: 94 out of 120
+EarlyStopping counter: 95 out of 120
+EarlyStopping counter: 96 out of 120
+Epoch: 440/500     Training Loss: 0.4112     Validation Loss: 1.2812
+EarlyStopping counter: 97 out of 120
+EarlyStopping counter: 98 out of 120
+EarlyStopping counter: 99 out of 120
+EarlyStopping counter: 100 out of 120
+EarlyStopping counter: 101 out of 120
+EarlyStopping counter: 102 out of 120
+EarlyStopping counter: 103 out of 120
+EarlyStopping counter: 104 out of 120
+EarlyStopping counter: 105 out of 120
+EarlyStopping counter: 106 out of 120
+EarlyStopping counter: 107 out of 120
+EarlyStopping counter: 108 out of 120
+EarlyStopping counter: 109 out of 120
+EarlyStopping counter: 110 out of 120
+EarlyStopping counter: 111 out of 120
+EarlyStopping counter: 112 out of 120
+EarlyStopping counter: 113 out of 120
+EarlyStopping counter: 114 out of 120
+EarlyStopping counter: 115 out of 120
+EarlyStopping counter: 116 out of 120
+Epoch: 460/500     Training Loss: 0.3170     Validation Loss: 0.9731
+EarlyStopping counter: 117 out of 120
+EarlyStopping counter: 118 out of 120
+EarlyStopping counter: 119 out of 120
+EarlyStopping counter: 120 out of 120
+Early stopping
+
+- training completed in 27.0 min(s) and 41.1496 sec(s)
+                                 precision    recall  f1-score   support
+
+             Dense Urban Fabric       0.68      0.71      0.69       271
+       Mineral Extraction Sites       1.00      0.12      0.22       140
+      Non Irrigated Arable Land       0.87      0.69      0.77       450
+                    Fruit Trees       0.00      0.00      0.00        27
+                   Olive Groves       0.89      0.88      0.89       589
+            Broad-leaved Forest       0.14      0.83      0.24        18
+              Coniferous Forest       0.90      0.69      0.78       144
+                   Mixed Forest       0.87      0.50      0.63       303
+Dense Sclerophyllous Vegetation       0.83      0.88      0.86      1370
+Sparce Scerophyllous Vegetation       0.85      0.89      0.87      2449
+       Sparcely Vegetated Areas       0.54      0.75      0.62       406
+                 Rocks and Sand       0.84      0.74      0.78       511
+                          Water       1.00      1.00      1.00       421
+                  Coastal Water       1.00      1.00      1.00       354
+
+                       accuracy                           0.82      7453
+                      macro avg       0.74      0.69      0.67      7453
+                   weighted avg       0.84      0.82      0.82      7453
+
