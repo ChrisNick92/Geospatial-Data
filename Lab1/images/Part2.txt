@@ -1,0 +1,168 @@
+var L8 = ee.ImageCollection("LANDSAT/LC08/C01/T1"),
+    polygon2 = 
+    /* color: #9999ff */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[22.791980760819225, 40.6601874190786],
+          [22.791980760819225, 40.54392994700602],
+          [22.966045397049694, 40.54392994700602],
+          [22.966045397049694, 40.6601874190786]]], null, false),
+    vegetation = 
+    /* color: #00ff02 */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      },
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Polygon(
+                [[[22.800220506912975, 40.59902105092767],
+                  [22.800220506912975, 40.59471971015351],
+                  [22.806486147171764, 40.59471971015351],
+                  [22.806486147171764, 40.59902105092767]]], null, false),
+            {
+              "class": 0,
+              "system:index": "0"
+            }),
+        ee.Feature(
+            ee.Geometry.Polygon(
+                [[[22.822193163162975, 40.58520204545794],
+                  [22.822193163162975, 40.581290938926415],
+                  [22.830947893387584, 40.581290938926415],
+                  [22.830947893387584, 40.58520204545794]]], null, false),
+            {
+              "class": 0,
+              "system:index": "1"
+            })]),
+    sea = 
+    /* color: #0613ff */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      },
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Polygon(
+                [[[22.867597597367077, 40.600585106232096],
+                  [22.867597597367077, 40.597261444968915],
+                  [22.873863237625866, 40.597261444968915],
+                  [22.873863237625866, 40.600585106232096]]], null, false),
+            {
+              "class": 1,
+              "system:index": "0"
+            }),
+        ee.Feature(
+            ee.Geometry.Polygon(
+                [[[22.827686327225475, 40.57633654235563],
+                  [22.827686327225475, 40.57007783276509],
+                  [22.839187639481334, 40.57007783276509],
+                  [22.839187639481334, 40.57633654235563]]], null, false),
+            {
+              "class": 1,
+              "system:index": "1"
+            })]),
+    urban = 
+    /* color: #ff99ff */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      },
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Polygon(
+                [[[22.942361814470683, 40.640586409855175],
+                  [22.942361814470683, 40.63537587083941],
+                  [22.951116544695292, 40.63537587083941],
+                  [22.951116544695292, 40.640586409855175]]], null, false),
+            {
+              "class": 2,
+              "system:index": "0"
+            }),
+        ee.Feature(
+            ee.Geometry.Polygon(
+                [[[22.85549547029188, 40.64058481682556],
+                  [22.85549547029188, 40.63576508222781],
+                  [22.864421861893444, 40.63576508222781],
+                  [22.864421861893444, 40.64058481682556]]], null, false),
+            {
+              "class": 2,
+              "system:index": "1"
+            })]);
+
+
+
+/* Part 2 - Steps 8 - 10 */
+
+var RGB_viz = {min: '6500', max: '11000',
+bands: ['B4', 'B3', 'B2']};  // RGB visualization
+
+
+var all_data_L8 = L8.filter(ee.Filter.bounds(polygon2)).
+filter(ee.Filter.lt('CLOUD_COVER', 20)).median().clip(polygon2);
+
+Map.addLayer(all_data_L8, RGB_viz, 'Classification data - L8');
+
+var features = all_data_L8.bandNames();
+
+print('Features: ', features);
+
+
+var training_pts = vegetation.merge(sea).merge(urban);
+
+var training_data = all_data_L8.sampleRegions({collection: training_pts,
+  properties: ['class'], scale: 30
+});
+
+print(training_data);
+
+
+var classifier = ee.Classifier.smileCart();
+
+var classifier = classifier.train({features: training_data,
+  classProperty: 'class', inputProperties: features});
+  
+var classified_image = all_data_L8.classify(classifier);
+
+var Class_viz = {min: 0, max: 2, palette: ['green', 'blue', 'red']};
+
+Map.addLayer(classified_image, Class_viz, 'Classified Image');
+
+
+// Accuracy assessment for CART
+
+var sample_rc = training_data.randomColumn('rand');
+var training = sample_rc.filter(ee.Filter.lt('rand', 0.7));
+var test = sample_rc.filter(ee.Filter.gte('rand', 0.7));
+
+
+var classifier = ee.Classifier.smileCart();
+
+var classifier = classifier.train({features: training,
+  classProperty: 'class', inputProperties: features});
+
+var confusionMatrix = ee.ConfusionMatrix(test.classify(classifier).errorMatrix({
+  actual: 'class',
+  predicted: 'classification'
+}));
+
+
+
+print('Confusion Matrix', confusionMatrix);
+print('Overall accuracy', confusionMatrix.accuracy());
+
