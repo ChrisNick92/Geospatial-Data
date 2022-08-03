@@ -58,7 +58,7 @@
     </tr>
     <tr>
       <td>8</td>
-      <td#a600cc</td>
+      <td>#a600cc</td>
       <td>Mixed Forest</td>
     </tr>
     <tr>
