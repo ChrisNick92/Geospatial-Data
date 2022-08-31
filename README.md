@@ -12,3 +12,5 @@ during my postgraduate programme in Data Science & Machine Learning, NTUA. The c
 - <b>Lab4</b> - *Video classification with RNN's and Transformers*. See <a href = "https://github.com/ChrisNick92/Geospatial-Data/tree/main/Lab4">Lab4</a>.
 
 - <b>Lab5</b> - *Object detection*. See <a href = "https://github.com/ChrisNick92/Geospatial-Data/tree/main/Lab5">Lab5</a>.
+
+- <b>Lab6</b> - *Applications of deep learning architectures in Earth observation*. Available soon!
